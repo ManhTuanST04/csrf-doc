@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSRF Attack Demo</title>
+</head>
+<body style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+  <h1>Bạn đã bị dụ nhấp vào link lạ!</h1>
+  <p><strong>Trong một cuộc tấn công thực tế, điều này có thể dẫn đến các hành động nguy hiểm.</strong></p>
+  <p>Bạn vừa nhấp vào một liên kết mà không biết trước chuyện gì sẽ xảy ra!</p>
+
+  <hr style="margin: 40px 0;">
+
+  <section style="text-align: left; max-width: 800px; margin: auto;">
+    <h2>Kỹ thuật tấn công Cross-Site Request Forgery (CSRF) là gì?</h2>
+    <p>
+      CSRF hoạt động bằng cách khai thác sự tin tưởng của trình duyệt web và người dùng. Thông thường, khi bạn đăng nhập vào một trang web, trình duyệt sẽ lưu trữ một số thông tin đăng nhập, chẳng hạn như tên đăng nhập và mật khẩu, dưới dạng cookies. Khi bạn thực hiện các hoạt động trên trang web đó, trình duyệt sẽ tự động gửi các yêu cầu đến máy chủ của trang web đó, kèm theo các thông tin xác thực.
+    </p>
+    <p>
+      Tấn công CSRF xảy ra khi kẻ tấn công tạo ra các yêu cầu giả mạo hoặc khai thác các yêu cầu đã tồn tại trong trình duyệt của người dùng để gửi đến máy chủ của trang web đó. Khi người dùng truy cập vào trang web đó, các yêu cầu giả mạo này sẽ được tự động gửi đi mà không cần sự cho phép hay sự nhận biết của người dùng.
+    </p>
+    <p>
+      Điều này có nghĩa là, nếu kẻ tấn công đã lừa được người dùng truy cập vào trang web của họ, thì họ có thể thực hiện các hoạt động trái phép trên trang web đó.
+    </p>
+  </section>
+
+  <p style="margin-top: 40px;">
+    Để tìm hiểu thêm, hãy <a href="https://vi.wikipedia.org/wiki/Cross-site_request_forgery" target="_blank">đọc thêm về CSRF tại đây</a>.
+  </p>
+</body>
+</html>
